@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 848409ee8ba454f42a5ddff137688a27, type: 3}
+  m_Name: ReferenceImageLibrary
+  m_EditorClassIdentifier: 
+  m_GuidLow: 5570855934747613061
+  m_GuidHigh: 6815796006053968305
+  m_Images:
+  - m_SerializedGuid:
+      m_GuidLow: 5059454685411286668
+      m_GuidHigh: 624837848129502852
+    m_SerializedTextureGuid:
+      m_GuidLow: 2625956478219210663
+      m_GuidHigh: 12873144921065115354
+    m_Size: {x: 0.05, y: 0.053208556}
+    m_SpecifySize: 1
+    m_Name: miniscule_0001_Layer-3
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 4920648076095059541
+      m_GuidHigh: 14702714566007364736
+    m_SerializedTextureGuid:
+      m_GuidLow: 1487661213279974949
+      m_GuidHigh: 9568090774841901818
+    m_Size: {x: 0.05, y: 0.052617803}
+    m_SpecifySize: 1
+    m_Name: miniscule_0002_Layer-2
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 4659753902682523625
+      m_GuidHigh: 11426769773871714997
+    m_SerializedTextureGuid:
+      m_GuidLow: 6116923519620289815
+      m_GuidHigh: 17618126115371010441
+    m_Size: {x: 0.05, y: 0.049481865}
+    m_SpecifySize: 1
+    m_Name: miniscule_0005_Layer-4
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5184078974653524586
+      m_GuidHigh: 9624129370568211891
+    m_SerializedTextureGuid:
+      m_GuidLow: 6067574380205915571
+      m_GuidHigh: 9434881639708645002
+    m_Size: {x: 0.05, y: 0.050252527}
+    m_SpecifySize: 1
+    m_Name: miniscule_0002_Layer-2
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 4649517976601778823
+      m_GuidHigh: 17384714082203884690
+    m_SerializedTextureGuid:
+      m_GuidLow: 6075284036125333423
+      m_GuidHigh: 11316392799688644216
+    m_Size: {x: 0.05, y: 0.05132275}
+    m_SpecifySize: 1
+    m_Name: miniscule_0005_Layer-4
+    m_Texture: {fileID: 0}
