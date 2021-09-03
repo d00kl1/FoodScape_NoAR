@@ -11,6 +11,8 @@ public enum Actions
     Harvest,    
 }
 
+
+//garden manager
 public class GardenManager : MonoBehaviour
 {
     public GameObject item_0Prefab;
