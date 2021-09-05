@@ -20,7 +20,8 @@ public class GardenManager : MonoBehaviour
     public GameObject item_2Prefab;
     public GameObject item_3Prefab;
     public GameObject item_4Prefab;
-    public GameObject item_5Prefab;    
+    public GameObject item_5Prefab;
+    public GameObject gemstonePrefab;
 
     public AudioController audioController;    
 
@@ -28,9 +29,16 @@ public class GardenManager : MonoBehaviour
 
     private Actions action;    
 
+    Dictionary<string, GameObject> plants = new Dictionary<string, GameObject>();
+
     void Awake()
     {
+        GameObject item = Instantiate(item_5Prefab, new Vector3(100.0f, 50.01f, 0.0f), Quaternion.identity);
+        Debug.Log("awake");
+        item.transform.SetParent(transform);
+        item.transform.LookAt(Camera.main.transform);
 
+        item.transform.DOScale(0, .25f).SetEase(Ease.OutBounce).From();
     }
 
     void OnEnable()

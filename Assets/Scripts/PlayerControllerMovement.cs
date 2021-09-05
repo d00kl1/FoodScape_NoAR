@@ -28,7 +28,15 @@ public class PlayerControllerMovement : MonoBehaviour
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
 
-        Vector3 move = transform.right * x + transform.forward * z;
+        Vector3 move = transform.right * 4 * x + transform.forward * 4 * z;
+
+        if (Input.GetKey("e"))
+            {
+            move += transform.up * 10;
+            }else if (Input.GetKey("q"))
+        {
+            move += transform.up * -10;
+        }
 
         controller.Move(move * speed * Time.deltaTime);
 
@@ -36,7 +44,7 @@ public class PlayerControllerMovement : MonoBehaviour
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
         }
 
-        velocity.y += gravity * Time.deltaTime;
+        velocity.y += 0;// gravity * Time.deltaTime;
 
         controller.Move(velocity * Time.deltaTime);
     }
