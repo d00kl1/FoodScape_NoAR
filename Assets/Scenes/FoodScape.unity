@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1821796168}
-  m_IndirectSpecularColor: {r: 0.18028606, g: 0.22571613, b: 0.3069248, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028569, g: 0.22571602, b: 0.30692476, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -174,12 +174,59 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -4717889140853181311, guid: 64ffb16d369144506990c9e62cbf1357, type: 3}
+      propertyPath: m_TagString
+      value: ground
+      objectReference: {fileID: 0}
+    - target: {fileID: -4323240407687228752, guid: 64ffb16d369144506990c9e62cbf1357, type: 3}
+      propertyPath: m_TagString
+      value: ground
+      objectReference: {fileID: 0}
+    - target: {fileID: -2140651934926558948, guid: 64ffb16d369144506990c9e62cbf1357, type: 3}
+      propertyPath: m_TagString
+      value: ground
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 64ffb16d369144506990c9e62cbf1357, type: 3}
       propertyPath: m_Name
       value: cube
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 64ffb16d369144506990c9e62cbf1357, type: 3}
+      propertyPath: m_TagString
+      value: ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 1085396440278744675, guid: 64ffb16d369144506990c9e62cbf1357, type: 3}
+      propertyPath: m_TagString
+      value: ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 5713815670833652032, guid: 64ffb16d369144506990c9e62cbf1357, type: 3}
+      propertyPath: m_TagString
+      value: ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 6895743772617917144, guid: 64ffb16d369144506990c9e62cbf1357, type: 3}
+      propertyPath: m_TagString
+      value: ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64ffb16d369144506990c9e62cbf1357, type: 3}
+--- !u!1 &181071920 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1085396440278744675, guid: 64ffb16d369144506990c9e62cbf1357, type: 3}
+  m_PrefabInstance: {fileID: 55825874}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &181071924
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181071920}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -8086114405739965674, guid: 64ffb16d369144506990c9e62cbf1357, type: 3}
 --- !u!1 &287940137
 GameObject:
   m_ObjectHideFlags: 0
@@ -355,6 +402,82 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &445087134 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5713815670833652032, guid: 64ffb16d369144506990c9e62cbf1357, type: 3}
+  m_PrefabInstance: {fileID: 55825874}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &445087138
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 445087134}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 3686986450251045966, guid: 64ffb16d369144506990c9e62cbf1357, type: 3}
+--- !u!1 &546020410 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6895743772617917144, guid: 64ffb16d369144506990c9e62cbf1357, type: 3}
+  m_PrefabInstance: {fileID: 55825874}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &546020414
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 546020410}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7250568275536486290, guid: 64ffb16d369144506990c9e62cbf1357, type: 3}
+--- !u!1 &564796163 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -4323240407687228752, guid: 64ffb16d369144506990c9e62cbf1357, type: 3}
+  m_PrefabInstance: {fileID: 55825874}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &564796167
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 564796163}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6860715536468734404, guid: 64ffb16d369144506990c9e62cbf1357, type: 3}
+--- !u!1 &730471111 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -2140651934926558948, guid: 64ffb16d369144506990c9e62cbf1357, type: 3}
+  m_PrefabInstance: {fileID: 55825874}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &730471115
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 730471111}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 8023997741483670183, guid: 64ffb16d369144506990c9e62cbf1357, type: 3}
 --- !u!1 &743722420
 GameObject:
   m_ObjectHideFlags: 0
@@ -569,7 +692,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1038980037}
         m_TargetAssemblyTypeName: GardenManager, Assembly-CSharp
         m_MethodName: SetItemType
         m_Mode: 3
@@ -701,7 +824,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1038980037}
         m_TargetAssemblyTypeName: GardenManager, Assembly-CSharp
         m_MethodName: SetItemType
         m_Mode: 3
@@ -760,6 +883,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1038980036}
+  - component: {fileID: 1038980037}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -782,6 +906,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1038980037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1038980035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b474f8ed19a594cc69cd99892c0737fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item_0Prefab: {fileID: 919132149155446097, guid: 9b6c0fdece9ae43a5af32fd48d7b1729, type: 3}
+  item_1Prefab: {fileID: 1326670617810588460, guid: c367b03300f694d72bf7ae882363308b, type: 3}
+  item_2Prefab: {fileID: 919132149155446097, guid: fe466ff308d974a4494ea2c3fcc1064f, type: 3}
+  item_3Prefab: {fileID: 919132149155446097, guid: 36b06b3fc66694a189033256e2e1d6ce, type: 3}
+  item_4Prefab: {fileID: 1326670617810588460, guid: 11584f99908924829acd82d8bfc87a70, type: 3}
+  item_5Prefab: {fileID: 1326670617810588460, guid: d7bf7aa95222c49698368cce3a64ffa9, type: 3}
+  gemstonePrefab: {fileID: 919132149155446097, guid: 79f95a06aed2e429d8a263d1cac36a88, type: 3}
+  audioController: {fileID: 0}
 --- !u!1 &1390553981
 GameObject:
   m_ObjectHideFlags: 0
@@ -864,7 +1008,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1038980037}
         m_TargetAssemblyTypeName: GardenManager, Assembly-CSharp
         m_MethodName: SetItemType
         m_Mode: 3
@@ -996,7 +1140,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1038980037}
         m_TargetAssemblyTypeName: GardenManager, Assembly-CSharp
         m_MethodName: SetItemType
         m_Mode: 3
@@ -1159,6 +1303,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e250a0eeac924492ba78900ed6b237b, type: 3}
+--- !u!1 &1627020086 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -4717889140853181311, guid: 64ffb16d369144506990c9e62cbf1357, type: 3}
+  m_PrefabInstance: {fileID: 55825874}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1627020090
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1627020086}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -4544270964802959909, guid: 64ffb16d369144506990c9e62cbf1357, type: 3}
 --- !u!1 &1821796167
 GameObject:
   m_ObjectHideFlags: 0
@@ -1334,7 +1497,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1038980037}
         m_TargetAssemblyTypeName: GardenManager, Assembly-CSharp
         m_MethodName: SetItemType
         m_Mode: 3
@@ -1343,7 +1506,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: green
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1841497351
@@ -1358,15 +1521,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.504, b: 0.50789016, a: 1}
+  m_Material: {fileID: 15303, guid: 0000000000000000f000000000000000, type: 0}
+  m_Color: {r: 0.60784316, g: 0.72156864, b: 0.85098046, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: d19e97616e83cb3489b4ee51878df426, type: 3}
   m_Type: 2
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1632,7 +1795,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1038980037}
         m_TargetAssemblyTypeName: GardenManager, Assembly-CSharp
         m_MethodName: SetItemType
         m_Mode: 3

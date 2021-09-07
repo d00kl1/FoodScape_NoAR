@@ -36,7 +36,7 @@ public class GardenManager : MonoBehaviour
         GameObject item = Instantiate(item_5Prefab, new Vector3(100.0f, 50.01f, 0.0f), Quaternion.identity);
         Debug.Log("awake");
         item.transform.SetParent(transform);
-        item.transform.LookAt(Camera.main.transform);
+       item.transform.LookAt(Camera.main.transform);
 
         item.transform.DOScale(0, .25f).SetEase(Ease.OutBounce).From();
     }
@@ -55,13 +55,12 @@ public class GardenManager : MonoBehaviour
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
-        {   
+        {
             bool blockedByCanvasUI = EventSystem.current != null && EventSystem.current.IsPointerOverGameObject();            
 
             if (!blockedByCanvasUI)
             {
                 Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-
                 if (Physics.Raycast(ray, out RaycastHit hit))
                 {
                     if (hit.collider.tag == "ground")
@@ -75,6 +74,7 @@ public class GardenManager : MonoBehaviour
                         audioController.PlayRandomClip(audioController.reverseNoteClips);
 
                         hit.collider.gameObject.transform.DOScale(0, .1f).SetEase(Ease.InBack).OnComplete(() => Destroy(hit.collider.gameObject));                        }
+                   
                 }
             }            
         }
@@ -109,7 +109,7 @@ public class GardenManager : MonoBehaviour
         
         
         
-        audioController.PlayRandomClip(audioController.forwardNoteClips);
+        //audioController.PlayRandomClip(audioController.forwardNoteClips);
         item.transform.SetParent(transform);
         item.transform.LookAt(Camera.main.transform);        
 
