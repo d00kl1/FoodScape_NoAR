@@ -1,0 +1,8 @@
+CHANGE BUTTON IMAGE
+go to upper right bar and pick canvas > plantpanel > button you want
+then is bottom part navigate to the image you want and in properties
+change filter mode to point (no filter) and texture type to sprite (2d and ui)
+might need to be dimensions with length % 4 = 0
+should have a play image next to it
+then go back to button and change source image, play around with pixels per
+unit multiplier and image type to make it work
