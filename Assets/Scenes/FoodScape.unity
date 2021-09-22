@@ -918,13 +918,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b474f8ed19a594cc69cd99892c0737fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fruit_array: []
+  gemstonePrefab: {fileID: 919132149155446097, guid: 79f95a06aed2e429d8a263d1cac36a88, type: 3}
   item_0Prefab: {fileID: 919132149155446097, guid: 9b6c0fdece9ae43a5af32fd48d7b1729, type: 3}
   item_1Prefab: {fileID: 1326670617810588460, guid: c367b03300f694d72bf7ae882363308b, type: 3}
   item_2Prefab: {fileID: 919132149155446097, guid: fe466ff308d974a4494ea2c3fcc1064f, type: 3}
   item_3Prefab: {fileID: 919132149155446097, guid: 36b06b3fc66694a189033256e2e1d6ce, type: 3}
   item_4Prefab: {fileID: 1326670617810588460, guid: 11584f99908924829acd82d8bfc87a70, type: 3}
   item_5Prefab: {fileID: 1326670617810588460, guid: d7bf7aa95222c49698368cce3a64ffa9, type: 3}
-  gemstonePrefab: {fileID: 919132149155446097, guid: 79f95a06aed2e429d8a263d1cac36a88, type: 3}
   audioController: {fileID: 0}
 --- !u!1 &1390553981
 GameObject:
@@ -1165,15 +1166,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.5, b: 0.9470587, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 2
+  m_Sprite: {fileID: 21300000, guid: bb197a5c794a188459778e9ba93ed3d6, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1529,8 +1530,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d19e97616e83cb3489b4ee51878df426, type: 3}
-  m_Type: 2
+  m_Sprite: {fileID: 21300000, guid: 9285a370139abca4cb5a94b7f1f8bca0, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1538,7 +1539,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 0.25
+  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1841497352
 CanvasRenderer:
   m_ObjectHideFlags: 0
