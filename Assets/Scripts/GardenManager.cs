@@ -31,7 +31,7 @@ public class GardenManager : MonoBehaviour, ISaveable
 
     private Actions action;    
 
-    List<Fruit> plants = new List<Fruit>();
+    List<GameObject> plants = new List<GameObject>();
 
     void Awake()
     {
@@ -63,7 +63,8 @@ public class GardenManager : MonoBehaviour, ISaveable
 
     void onApplicationQuit()
     {
-
+        PopulateSaveData(new SaveData());
+        Debug.Log("test");
     }
 
     void OnEnable()
@@ -78,9 +79,9 @@ public class GardenManager : MonoBehaviour, ISaveable
 
     public void LoadFromSaveData(SaveData a_SaveData)
     {
-        foreach (Fruit fruit in plants)
+        foreach (GameObject fruit in plants)
         {
-            fruit.LoadFromSaveData(a_SaveData);
+           // fruit.LoadFromSaveData(a_SaveData);
         }
     }
 
@@ -89,8 +90,9 @@ public class GardenManager : MonoBehaviour, ISaveable
         // put game manager stuff like score here, ie
         //a_SaveData.(variable) = (garden manager variable)
 
-        foreach(Fruit fruit in plants)
+        foreach(GameObject obj in plants)
         {
+            Fruit fruit = obj.GetComponent(typeof (Fruit)) as Fruit;
             fruit.PopulateSaveData(a_SaveData);
         }
     }
@@ -142,7 +144,6 @@ public class GardenManager : MonoBehaviour, ISaveable
                     {
                         Debug.Log("Touched ground");
                         AddItem(hit.point);
-                       // plants.Add(newFruit);
                     }
                     else if ((hit.collider.tag == "item") && (action == Actions.Harvest))
                     {
@@ -164,14 +165,16 @@ public class GardenManager : MonoBehaviour, ISaveable
     {
         var itemOffset = new Vector3(0.0f, 0.01f, 0.0f);
         
-        GameObject item = null;       
+        GameObject item = null;  
         item = Instantiate(fruit_array[this.itemType], position + itemOffset, Quaternion.identity);
-    //audioController.PlayRandomClip(audioController.forwardNoteClips);
         item.transform.SetParent(transform);
-        item.transform.LookAt(Camera.main.transform);        
-
-        item.transform.DOScale(0, .25f).SetEase(Ease.OutBounce).From();
+        item.transform.LookAt(Camera.main.transform);
         
+        Fruit temp = gameObject.AddComponent(typeof(Fruit)) as Fruit;
+        temp.setType(species.lemon);
+        item.transform.DOScale(0, .25f).SetEase(Ease.OutBounce).From();
+        plants.Add(item);
+        Debug.Log(plants.Count);
     }
 
     public void SetItemType(int itemType)

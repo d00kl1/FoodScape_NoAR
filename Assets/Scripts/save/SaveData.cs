@@ -12,7 +12,7 @@ public class SaveData
     [System.Serializable]
     public struct FruitData
     {
-        public string uuid;
+        public System.Guid guid;
         public int age;
         public species type;
     }

@@ -8,11 +8,11 @@ public class Fruit : MonoBehaviour, ISaveable
 
     private int age;
     private species type;
-    private string uuid;
+    private System.Guid guid;
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -25,7 +25,7 @@ public class Fruit : MonoBehaviour, ISaveable
     public void PopulateSaveData(SaveData a_SaveData)
     {
         SaveData.FruitData fruitData = new SaveData.FruitData();
-        fruitData.uuid = "generate later lol";
+        fruitData.guid = guid;
         fruitData.age = age;
         fruitData.type = type;
         a_SaveData.m_FruitData.Add(fruitData);
@@ -36,12 +36,44 @@ public class Fruit : MonoBehaviour, ISaveable
     {
         foreach(SaveData.FruitData fruitData in a_SaveData.m_FruitData)
         {
-            if (fruitData.uuid == uuid)
-            {
-                type = fruitData.type;
-                age = fruitData.age;
-                break;
-            }
+            type = fruitData.type;
+            age = fruitData.age;
+            guid = fruitData.guid;
+            break;
         }
+    }
+
+    //setters
+    public void setAge(int n)
+    {
+        age = n;
+    }
+
+    public void setType(species newType)
+    {
+        type = newType;
+    }
+
+    public void instantiate(species newType, System.Guid guid, int n = 0)
+    {
+        type = newType;
+        age = n;
+        this.guid = guid;
+    }
+
+    //getters
+    public int getAge()
+    {
+        return age;
+    }
+
+    public species getType()
+    {
+        return type;
+    }
+
+    public System.Guid getUuid()
+    {
+        return guid;
     }
 }

@@ -196,7 +196,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1085396440278744675, guid: 64ffb16d369144506990c9e62cbf1357, type: 3}
       propertyPath: m_TagString
-      value: ground
+      value: desert
+      objectReference: {fileID: 0}
+    - target: {fileID: 5317572633689952302, guid: 64ffb16d369144506990c9e62cbf1357, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5713815670833652032, guid: 64ffb16d369144506990c9e62cbf1357, type: 3}
       propertyPath: m_TagString
